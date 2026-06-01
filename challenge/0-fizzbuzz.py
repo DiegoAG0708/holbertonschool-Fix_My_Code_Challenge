@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import sys
 
+
 def fizzbuzz(n):
     for i in range(1, n + 1):
-        if i % 3 == 0 and i % 5 == 0:   # check FizzBuzz first
+        if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz", end=" ")
         elif i % 3 == 0:
             print("Fizz", end=" ")
@@ -11,6 +12,7 @@ def fizzbuzz(n):
             print("Buzz", end=" ")
         else:
             print(i, end=" ")
+
 
 if __name__ == "__main__":
     fizzbuzz(int(sys.argv[1]))
