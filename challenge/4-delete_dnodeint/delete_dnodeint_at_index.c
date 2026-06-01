@@ -34,7 +34,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
     if (tmp == NULL)
         return (-1);
 
-    /* unlink node */
+    /* unlink node correctly */
     if (tmp->prev != NULL)
         tmp->prev->next = tmp->next;
     if (tmp->next != NULL)
